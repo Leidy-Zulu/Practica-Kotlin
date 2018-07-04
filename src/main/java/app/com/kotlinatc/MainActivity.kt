@@ -1,5 +1,6 @@
 package app.com.kotlinatc
 
+import android.content.Intent
 import android.os.Bundle
 import android.support.design.widget.Snackbar
 import android.support.v7.app.AppCompatActivity
@@ -43,39 +44,15 @@ class MainActivity : AppCompatActivity() {
             countryList?.add(place)
         }
         adapter!!.notifyDataSetChanged()
+        goToActivity()
 
     }
 
+    fun goToActivity() {
+        var intent = Intent(this, Main2Activity::class.java)
+        startActivity(intent)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
+    }
 
 
 }
